@@ -20,3 +20,41 @@ html, body {
     color: #3A4145;
 	font-family: 'Fira Sans', sans-serif;
 }
+
+#banner {
+	height: 90vh;
+	padding: 0;
+	margin: 0;
+}
+
+#main-container{
+}
+
+.card-container {
+	justify-content: space-between;
+}
+
+div {
+	border: 1px solid black;
+}
+
+section {
+	border: 1px solid black;
+	padding: 10%;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 30%;
+}
