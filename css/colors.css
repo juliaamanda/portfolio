@@ -1,0 +1,23 @@
+
+:root {
+  --color-1: #FFFFFF; 
+  --color-2: #A3E4FF; 
+  --color-3: #93CDE5; 
+  --color-4: #7AABBF; 
+  --color-5: #FFFFFF; 
+  --color-6: #FFFFFF; 
+  --color-7: #FFFFFF; 
+  --color-8: #FFFFFF; 
+}
+
+body {
+  background-color: var(--color-3)
+}
+
+.odd-section {
+	background-color: var(--color-2);
+}
+
+.even-section {
+	background-color: var(--color-1);
+}
