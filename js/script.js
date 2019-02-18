@@ -6,4 +6,10 @@ $( document ).ready(function() {
     		return false;
     	})
     });
+
+    $( "img" ).each(function() {
+    	$(this).on("contextmenu", function () {
+    		return false;
+    	})
+    });
 });

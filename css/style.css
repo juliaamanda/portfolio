@@ -21,13 +21,39 @@ html, body {
 	font-family: 'Fira Sans', sans-serif;
 }
 
-section {
+body {
+	background-color: var(--color-2);
+	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+	background-size: 50px 50px;
+	/*
+	background-color: var(--color-2);
+	background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+	linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+	background-size: 13px, 29px, 37px, 53px;
+	*/
+	/*
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color: var(--color-2);
+	background-size:16px 16px;
+	*/
+}
+
+section, nav, header, footer {
 	border-bottom: 1px solid black;
 	padding: 10%;
-	padding-bottom: 30vh;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-  	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+	padding-bottom: 10vh;
+	padding-top: 10vh;
+	-webkit-clip-path: polygon(0 5.5vw, 100% 0, 100% calc(100% - 6vw), 0% calc(100% - 0.5vw));
+	clip-path: polygon(0 5.5vw, 100% 0, 100% calc(100% - 6vw), 0% calc(100% - 0.5vw));
 }
+
+
 
 #banner {
 	min-height: 90vh;
@@ -60,6 +86,12 @@ section {
 	justify-content: center;
 	align-items: center;
 }
+.col-5 * {
+	max-width: 95%;
+	min-width: 15%;
+	width: 50px;
+	margin: 10px;
+}
 
 .col-3 * {
 	max-width: 95%;
@@ -86,6 +118,11 @@ section {
 
 .circle {
 	border-radius: 50%;
+}
+
+.col-5 .card>img {
+	width: 80%;
+	height: auto;
 }
 
 :root {
