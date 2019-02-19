@@ -21,3 +21,8 @@ body {
 .even-section {
 	background-color: var(--color-1);
 }
+
+.card {
+  background-color: var(--color-1);
+  border: none;
+}

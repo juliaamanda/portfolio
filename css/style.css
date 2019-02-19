@@ -23,40 +23,22 @@ html, body {
 
 body {
 	background-color: var(--color-2);
-	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
-	background-size: 50px 50px;
-	/*
-	background-color: var(--color-2);
-	background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-	linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-	linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-	background-size: 13px, 29px, 37px, 53px;
-	*/
-	/*
-	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color: var(--color-2);
-	background-size:16px 16px;
-	*/
+//	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+//	background-size: 50px 50px;
 }
 
 section, nav, header, footer {
 	border-bottom: 1px solid black;
 	padding: 10%;
-	padding-bottom: 10vh;
-	padding-top: 10vh;
+	padding-bottom: 13vw;
+	padding-top: 13vw;
 	-webkit-clip-path: polygon(0 5.5vw, 100% 0, 100% calc(100% - 6vw), 0% calc(100% - 0.5vw));
 	clip-path: polygon(0 5.5vw, 100% 0, 100% calc(100% - 6vw), 0% calc(100% - 0.5vw));
+	margin-bottom: -2vw;
 }
 
-
-
 #banner {
-	min-height: 90vh;
+	min-height: 80vh;
 	margin: 0;
 	text-align: center;
 }
@@ -109,29 +91,21 @@ section, nav, header, footer {
 
 .card {
 	border: 1px solid black;
+	padding: 5px;
 }
 
 .card>img {
 	width: 30%;
 	height: auto;
+	float: right;
 }
 
 .circle {
 	border-radius: 50%;
+//	-webkit-clip-path: circle(50% at 50% 50%);
+//	clip-path: circle(50% at 50% 50%);
 }
 
-.col-5 .card>img {
-	width: 80%;
-	height: auto;
-}
-
-:root {
-  --color-1: #FFFFFF; 
-  --color-2: #A3E4FF; 
-  --color-3: #93CDE5; 
-  --color-4: #7AABBF; 
-  --color-5: #FFFFFF; 
-  --color-6: #FFFFFF; 
-  --color-7: #FFFFFF; 
-  --color-8: #FFFFFF; 
+.contact-item {
+	align-items: center;
 }
